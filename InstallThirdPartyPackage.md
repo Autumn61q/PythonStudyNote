@@ -1,5 +1,5 @@
 第三方包：
-  ![](https://github.com/Autumn61q/PythonStudyNote/commit/22504ff6bdf3b7600c3a6449fca429f364d0b111)
+![](https://github.com/Autumn61q/PythonStudyNote/commit/22504ff6bdf3b7600c3a6449fca429f364d0b111)
 
 如何安装第三方包：
   用python内置的pip程序即可：
