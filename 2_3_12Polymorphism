@@ -1,0 +1,24 @@
+方法体是空实现的叫做抽象方法
+含抽象方法的类称为抽象类
+
+class Animal:
+    def speak():
+        pass # 空实现，叫抽象类或者接口
+
+class Cat(Animal):
+    eyesNumbers=2
+    def speak(self):
+        print("喵喵喵")
+    
+class Dog(Animal):
+    legsNumbers=2
+    def speak(self):
+        print("汪汪汪")
+
+def makeNoise(animal:Animal):
+    animal.speak()# 汪汪汪
+    print(type(animal))# <class '__main__.Dog'>
+    print(animal.legsNumbers)# 2
+
+d=Dog()
+makeNoise(d)
