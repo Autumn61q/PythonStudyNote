@@ -1,1 +1,36 @@
+Python中的类型注解是一种用于对变量、函数参数和返回值等进行类
+型标注的机制，它并不会改变代码的运行逻辑，但可以提高代码的可
+读性和可维护性。通过类型注解，可以清晰地表达变量和函数的预期
+类型，帮助开发者更好地理解代码，并在一定程度上减少类型相关的
+错误。类型注解是Python 3.5及以上版本引入的新特性，可以使用:
+来为变量、函数参数和返回值等添加类型注解。
 
+注：类型注解只是一种静态分析工具，并不会影响代码的实际执行。
+    （num:int="hhhh"
+      print(num)   这样写也不错，该输出hhhh还是hhhh）
+
+1. 为变量注解：
+  语法： 变量:类型
+num:int=10
+或者是 num=10 # type: int  #抽象
+
+2. 类对象注解：
+  class foo:
+    pass
+stu:s=student()
+或者是s=student() # type:Student
+
+3. 对数据容器注解：
+  my_list:list=[1,2,3]
+  也可以再详细一点：
+  my_list:list[int]=[1,2,3]
+  my_tuple:tuple[int,str]=(1,"hhh")
+  my_dict:dict[str,int]={"age":19}
+  或者是用注释，跟上面没区别
+
+但是上面那三类里面的具体例子，就算是不写注解也能看出来数据类型
+类型注解主要是对一些一眼看不出来数据类型的情况使用的。
+如：
+  var1:int=random.randint(1,10)
+  var2:dict=json.loads(data)
+  var3:Student=func()# 这个是标记出来返回值
