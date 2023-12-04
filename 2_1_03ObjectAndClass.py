@@ -9,7 +9,7 @@ class Student:
     # age=None
     # tel=None
 
-    def __init__(self,name,age,tel):
+    def __init__(self,name,age,tel): #但是这样的话你就必须要传参进来，你要是不想传的话就写 def __init__(self):，然后下面那三行按自己的需求改改就行（就相当于设一下默认的参数）。上面那三行还是可以省略
         self.name=name
         self.age=age
         self.tel=tel
