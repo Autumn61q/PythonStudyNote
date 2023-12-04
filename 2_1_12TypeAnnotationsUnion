@@ -1,0 +1,5 @@
+就是说有的数据容器它里面的数据类型多，不好描述，所以我们
+from typing import Union
+然后就可以写
+my_list:list[Union[int,str]]=[1,2,"睡觉","学习"]
+里面的Union[int,str]意思就是这个里面既有int又有str
